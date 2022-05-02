@@ -1,0 +1,146 @@
+<h2><sup class="fake-head" id="id-%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B"></sup><a class="header-link" href="#id-%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B"><p>常微分方程</p></a></h2>
+<p><span class="image-container"><img data-viewer="" alt="微分方程导图" title="微分方程导图" src="http://r0b2zy4ts.hn-bkt.clouddn.com//img/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%AF%BC%E5%9B%BE.png"><small class="desc">微分方程导图</small></span></p>
+<h3><sup class="fake-head" id="id-%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"></sup><a class="header-link" href="#id-%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><p>微分方程的基本概念</p></a></h3>
+<p><strong>微分方程</strong>：表示未知函数、未知函数的导数或微分与自变量之间的关系的方程。
+如果微分方程中的未知函数（一元函数）仅含有一个自变量，这样的微分方程称为<em>常微分方程</em>。否则，称为<em>偏微分方程</em>。</p>
+<p><strong>微分方程的阶</strong>：方程中未知函数的最高导数的阶数 n 叫作该微分方程的阶，同时该方程叫做 n 阶微分方程。</p>
+<p><strong>线性微分方程</strong>：微分方程中所含的未知函数及其各阶导数全是一次幂，形如：
+<span class="image-container"><img data-viewer="" alt="img" title="img" src="https://bkimg.cdn.bcebos.com/formula/9da6947c9678587d6a1838c9c2f5a141.svg"><small class="desc">img</small></span></p>
+<p><strong>微分方程的解</strong>：带入微分方程后能使方程成为恒等式的函数 y=f (x)。</p>
+<p><strong>通解</strong>：解中所含任意<em>常数相互独立</em>，<em>且个数与方程的阶数相同</em>。</p>
+<p><strong>特解</strong>：不含任意常数的解。</p>
+<p>我们用未知函数及其各阶导数在某个特定点的值作为确定通解中任意常数的条件，称为微分方程的<strong>初始条件</strong>。</p>
+<p><strong>初值问题</strong>：求微分方程满足初始条件的解的问题。</p>
+<p><strong>初值问题特解</strong>：通过初始条件确定的不含任意常数的解。</p>
+<h3><sup class="fake-head" id="id-%E4%B8%80%E9%98%B6%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B"></sup><a class="header-link" href="#id-%E4%B8%80%E9%98%B6%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B"><p>一阶微分方程</p></a></h3>
+<ol>
+<li>可分离变量微分方程
+设有一阶微分方程 dy /dx = F (x,y)，如果右端可以分解为 F (x,y) = f (x) *g (y) 其中 f (x)，g (y) 都是连续函数。</li>
+</ol>
+<p>$$
+\frac {dy}{dx} = f(x) \cdot g(y)
+$$</p>
+<ol start="2">
+<li><p>齐次微分方程
+可化为如下形式的
+$$
+\frac {dy}{dx} = \varphi (\frac {y}{x})
+$$
+<strong>解法</strong>：</p>
+<p>做变换 u = y /x，对 y = xu 两边求导得</p></li>
+</ol>
+<p>$$
+\frac {dy}{dx} = u + x\frac {du}{dx}
+$$</p>
+<ol start="3">
+<li>一阶线性微分方程</li>
+</ol>
+<ul>
+<li><p>一阶齐次线性微分方程
+ $$
+ \frac {dy}{dx} + P (x) y = 0
+ $$
+ <strong>通解</strong>为
+ $$
+ y = Ce^{-\int P (x) dx}
+ $$</p></li>
+<li><p>一阶非齐次线性微分方程
+ $$
+ \frac {dy}{dx} + P (x) y = Q (x)
+ $$</p>
+<p><strong>通解</strong>
+ $$
+ y = e^{-\int P (x) dx}[\int Q (x) e^{\int P (x) dx} dx + C]
+ $$
+ 也可写成
+ $$
+ y = Ce^{-\int P (x) dx} + e^{-\int P (x) dx}\int Q (x) e^{\int P (x) dx} dx
+ $$
+ <strong>一阶非齐次线性微分方程的通解</strong>是对应的一阶<strong>齐次线性微分方程的通解</strong>与一阶<strong>非齐次线性微分方程的特解</strong>之和</p></li>
+</ul>
+<h3><sup class="fake-head" id="id-%E5%8F%AF%E9%99%8D%E9%98%B6%E7%9A%84%E9%AB%98%E9%98%B6%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B"></sup><a class="header-link" href="#id-%E5%8F%AF%E9%99%8D%E9%98%B6%E7%9A%84%E9%AB%98%E9%98%B6%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B"><p>可降阶的高阶微分方程</p></a></h3>
+<ol>
+<li>y^(n) = f (x) 型的微分方程</li>
+<li>y'' = f (x,y') 型的微分方程（不显含未知函数 y）
+令 y' = p，则 y'' = p'，代入原方程，得 p' = f (x,p), 这是关于 x 和 p 的一阶方程，如果可以求出其通解 p，分离变量再积分一次便得到通解</li>
+<li>y'' = f (y,y') 型的微分方程（不显含未知函数 x）
+令 y' = p，那么 y'' = dp/dx = (dp/dy) * (dy/dx) = p*(dp/dy)，如果可以求出其通解 p，分离变量再积分一次便得到通解</li>
+</ol>
+<h2><sup class="fake-head" id="id-%E4%BA%8C%E9%98%B6%E5%B8%B8%E7%B3%BB%E6%95%B0%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B"></sup><a class="header-link" href="#id-%E4%BA%8C%E9%98%B6%E5%B8%B8%E7%B3%BB%E6%95%B0%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B"><p>二阶常系数线性微分方程</p></a></h2>
+<blockquote>
+  <p>二阶线性<em>非齐次</em>微分方程
+  $$
+  y'' + p (x) y' + q (x) y = f (x)
+  $$
+  二阶线性<em>齐次</em>微分方程
+  $$
+  y'' + p (x) y' + q (x) y = 0
+  $$
+  二阶<em>常系数线性非齐次</em>微分方程
+  $$
+  y'' + py' + qy = f (x)
+  $$
+  二阶<em>常系数线性齐次</em>微分方程
+  $$
+  y'' + py' + qy = 0
+  $$</p>
+</blockquote>
+<h3><sup class="fake-head" id="id-%E4%BA%8C%E9%98%B6%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E8%A7%A3%E7%9A%84%E7%BB%93%E6%9E%84"></sup><a class="header-link" href="#id-%E4%BA%8C%E9%98%B6%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E8%A7%A3%E7%9A%84%E7%BB%93%E6%9E%84"><p>二阶线性微分方程解的结构</p></a></h3>
+<ol>
+<li>二阶线性<strong>齐次</strong>微分方程解的结构
+如果函数 y1 和 y2 是方程的解，则函数 <code>y = C1y1 + C2y2</code>（C1, C2 为任意常数）也是方程的解。
+如果函数 y1 和 y2 是方程的<strong>两个线性无关的特解</strong>，则函数 y = <code>C1y1 + C2y2</code>（C1, C2 为任意常数）<strong>是方程的通解</strong>。</li>
+<li>二阶线性<strong>非齐次</strong>微分方程解的结构
+设函数 y* 是二阶线性非齐次微分方程的一个<strong>特解</strong>，函数 Y 是对应对应的线性齐次微分方程的通解，则 <code>y = Y + y*</code> 是方程的通解。
+若 y1 为方程 <code>y‘’ + p(x)y' + q(x)y = f1(x)</code> 的特解，y2 为方程 <code>y‘’ + p(x)y' + q(x)y = f2(x)</code> 的特解，则 y = y1 + y2 为方程 <code>y‘’ + p(x)y' + q(x)y = f1(x) f2(x)</code> 的特解。-- 常称为<strong>线性微分方程的解的叠加原理</strong>。</li>
+</ol>
+<h3><sup class="fake-head" id="id-%E4%BA%8C%E9%98%B6%E5%B8%B8%E7%B3%BB%E6%95%B0%E7%BA%BF%E6%80%A7%E9%BD%90%E6%AC%A1%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%9A%84%E8%A7%A3"></sup><a class="header-link" href="#id-%E4%BA%8C%E9%98%B6%E5%B8%B8%E7%B3%BB%E6%95%B0%E7%BA%BF%E6%80%A7%E9%BD%90%E6%AC%A1%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%9A%84%E8%A7%A3"><p>二阶常系数线性齐次微分方程的解</p></a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center;">特征方程的两个根 r1, r2</th>
+<th style="text-align:center;">方程 <code>y'' + py' + qy = 0</code> 的通解</th>
+<th>特征方程</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;">两个不相等的实根 r1，r2</td>
+<td style="text-align:center;"><code>y=C1e^r1x + C2e^r2x</code></td>
+<td>(r - k1)(r - k2) = 0</td>
+</tr>
+<tr>
+<td style="text-align:center;">两个相等的实根 r1 = r2</td>
+<td style="text-align:center;"><code>y=(C1+C2x)e^r1x</code></td>
+<td>(r-k)^2 = 0</td>
+</tr>
+<tr>
+<td style="text-align:center;">一对共轭复根 r1,2 = α ± iβ，β ≠ 0</td>
+<td style="text-align:center;"><code>y=e^αx(C1cosβx + C2sinβx)</code></td>
+<td>(r - α)^2 = -β^2</td>
+</tr>
+</tbody>
+</table>
+<h3><sup class="fake-head" id="id-%E4%BA%8C%E9%98%B6%E5%B8%B8%E7%B3%BB%E6%95%B0%E7%BA%BF%E6%80%A7%E9%9D%9E%E9%BD%90%E6%AC%A1%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%9A%84%E8%A7%A3"></sup><a class="header-link" href="#id-%E4%BA%8C%E9%98%B6%E5%B8%B8%E7%B3%BB%E6%95%B0%E7%BA%BF%E6%80%A7%E9%9D%9E%E9%BD%90%E6%AC%A1%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%9A%84%E8%A7%A3"><p>二阶常系数线性非齐次微分方程的解</p></a></h3>
+<table>
+<thead>
+<tr>
+<th>f (x) 的形式</th>
+<th>特解 y*(x) 的形式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>f(x) = Pm(x),<br>其中 Pm (x) 为 m 次多项式</td>
+<td>0 不是特征根：<code>y* = Qm(x)</code><br>0 是特征单根：<code>y* = xQm(x)</code><br>0 是特征重根：<code>y* = x^2Qm(x)</code></td>
+</tr>
+<tr>
+<td>f(x) = Pm(x)e^λx</td>
+<td>λ 不是特征根：<code>y* = Qm(x)e^λx</code><br>λ 是特征单根：<code>y* = xQm(x)e^λx</code><br>λ 是特征重根：<code>y* = x^2Qm(x)e^λx</code></td>
+</tr>
+<tr>
+<td>f (x) = e^λx [Pn (x) cosωx + Tm (x) sinωx ]，其<br>中 Pn (x),Tm (x) 分别为 n 次，m 次多项式</td>
+<td>λ±iω 不是特征根：<code>y*=e^λx[Rl(x)cosωx + Sl(x)sinωx ]</code><br>λ±iω 是特征根：<code>y*=xe^λx[Rl(x)cosωx + Sl(x)sinωx ]</code></td>
+</tr>
+</tbody>
+</table>
